@@ -85,7 +85,7 @@ jobs:
           # устанавливаем тег latest, чтобы потом
           # на сервере и в docker-compose.yml не указывать версию
           tags: uno2003/taski_backend:latest
-    frontend_tests:
+  frontend_tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -147,4 +147,4 @@ jobs:
           context: ./gateway/
           push: true
           # Тут вместо username должен быть ваш логин на Docker Hub
-          tags: username/taski_gateway:latest
+          tags: uno2003/taski_gateway:latest
