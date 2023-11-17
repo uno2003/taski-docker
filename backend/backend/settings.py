@@ -4,9 +4,9 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-SECRET_KEY = os.getenv('SECRET_KEY', default= 'secret key')
+SECRET_KEY = os.getenv('SECRET_KEY', default='secret key')
 DEBUG = os.getenv('DEBUG', default='True')
-ALLOWED_HOSTS=['192.168.118.128', '127.0.0.1', 'localhost', 'uno2003-taski.hopto.org']
+ALLOWED_HOSTS = ['192.168.118.128', '127.0.0.1', 'localhost', 'uno2003-taski.hopto.org']
 
 # Application definition
 
